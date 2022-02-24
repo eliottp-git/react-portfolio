@@ -85,6 +85,10 @@ section {
     align-items: center;
 }
 
+.card--summary .spaceafter {
+    padding-right: 0.2em;
+}
+
 .card--summary--star {
     height: 14px;
 }

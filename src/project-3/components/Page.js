@@ -10,13 +10,7 @@ function Page() {
         e => 
         <Card 
         key={e.id}
-        openSpots={e.openSpots}
-        img={e.coverImg}
-        rating={e.stats.rating}
-        reviewCount={e.stats.reviewCount}
-        location={e.location}
-        title={e.title}
-        price={e.price}
+        info={e}
         />
     )
 
