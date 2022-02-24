@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(250, 249, 236);
+    margin: 0;
+}
+
+nav {
+    height: 10vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color: antiquewhite;
+}
+
+nav > img {
+    width: 4em;
+    padding-left: 1em;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    gap: 1em;
+
+}
+
+.movie-card {
+    display: grid;
+    width: 20em;
+    margin-bottom: 1em;
+    border-radius: 0.6em;
+    overflow: hidden;
+    background: rgb(32, 30, 29);
+}
+
+.movie-card--section-summary {
+    font-style: italic;
+    font-weight: 800;
+    color: rgb(218, 217, 212);
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center
+}
+
+.movie-card--section-img .movie-card--img {
+    width: 100%;
+}
+
+.movie-card--section-info {
+    padding: 1em;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: auto; */
+}
+
+.movie-card--section-info > * {
+    padding-bottom: 0.2em;
+}
+
+.movie-card span {
+    font-weight: 700;
+    padding-right: 0.2em;
+    font-size: 1.2em;
+}
+
+.movie-card--section-links {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.movie-card--trakt_url, .movie-card--trailer {
+    text-decoration: none;
+    color: rgb(199, 197, 197);
+    font-weight: 500;
+    font-size: 1.2em;
+    
+    display: inline-block;
+    position: relative;
+    color: #0087ca;  
+}
+
+.movie-card--trakt_url:after, .movie-card--trailer:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.movie-card--trakt_url:hover:after, .movie-card--trailer:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+

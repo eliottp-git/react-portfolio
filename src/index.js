@@ -27,8 +27,20 @@ import ReactDOM from 'react-dom';
 // }
 
 // -- PROJECT 3 -- //
-import './project-3/css/style.css'
-import Page from './project-3/components/Page.js'
+// import './project-3/css/style.css'
+// import Page from './project-3/components/Page.js'
+
+// function App() {
+//   return (
+//     <div>
+//       <Page />
+//     </div>
+//   )
+// }
+
+// -- PROJECT 4 -- //
+import './project-4/css/style.css'
+import Page from './project-4/components/Page'
 
 function App() {
   return (
