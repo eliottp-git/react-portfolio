@@ -10,7 +10,7 @@ function Page() {
         e => 
         <Card 
         key={e.id}
-        info={e}
+        {...e}
         />
     )
 
