@@ -17,6 +17,7 @@ nav {
 	position: sticky;
 	top: 0;
     background-color: antiquewhite;
+    z-index: 1;
 }
 
 nav > img {
