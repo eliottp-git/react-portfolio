@@ -12,12 +12,22 @@
 
 body {
     font-family: Inter, sans-serif;
+    height: 100%;
 }
 
-/* -- HEADER -- */
+/* -- PAGE --  */
 
-.header-nav-bar {
+.page {
     display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+}
+
+/* -- NAVBAR -- */
+
+header {
+    display: flex;
+    flex: 0 1 auto;
     align-items: center;
     background-color: #21222A;
     height: 2em;
@@ -48,9 +58,11 @@ body {
 /* -- MAIN --  */
 
 .main-content {
+    position: relative;
+    flex: 1 1 auto;
+    /* flex-grow: 1; */
     color: white;
     background: rgba(40, 45, 53, 1);
-    height: 100vh;
     padding: 3em;
 }
 
@@ -78,9 +90,9 @@ body {
 }
 
 .main-content-background {
-    position: fixed;
-    top: 20em;
-    left: 33em;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
     width: 10em;
     color: white;
 }

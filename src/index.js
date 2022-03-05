@@ -2,17 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // -- PROJECT 1 -- //
-// import Header from './project-1/components/Header'
-// import MainContent from './project-1/components/MainContent'
-// import './project-1/css/style.css';
-// function App() {
-//   return (
-//     <div>
-//       <Header />
-//       <MainContent />
-//     </div>
-//   )
-// }
+import Page from './project-1/components/Page';
+import './project-1/css/style.css';
+function App() {
+  return (
+    <>
+      <Page />
+    </>
+  )
+}
 
 // -- PROJECT 2 -- //
 // import BusinessCard from './project-2/components/BusinessCard'
@@ -39,16 +37,40 @@ import ReactDOM from 'react-dom';
 // }
 
 // -- PROJECT 4 -- //
-import './project-4/css/style.css'
-import Page from './project-4/components/Page'
+// import './project-4/css/style.css'
+// import Page from './project-4/components/Page'
 
-function App() {
-  return (
-    <div>
-      <Page />
-    </div>
-  )
-}
+// function App() {
+//   return (
+//     <div>
+//       <Page />
+//     </div>
+//   )
+// }
+
+// -- PROJECT 5 -- //
+// import './project-5/css/style.css'
+// import Page from './project-5/components/Page'
+
+// function App() {
+//   return (
+//     <div>
+//       <Page />
+//     </div>
+//   )
+// }
+
+// -- PROJECT 6 -- //
+// import './project-6/css/style.css'
+// import Page from './project-6/components/Page'
+
+// function App() {
+//   return (
+//     <div>
+//       <Page />
+//     </div>
+//   )
+// }
 
 ReactDOM.render(
   <App />,
