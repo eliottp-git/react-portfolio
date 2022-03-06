@@ -1,0 +1,21 @@
+section {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column; 
+}
+
+.hero--img {
+    max-width: 400px;
+    align-self: center;
+}
+
+.hero--title {
+    margin-bottom: 16px;
+}
+
+.hero--subtitle {
+    margin-top: 0;
+} 

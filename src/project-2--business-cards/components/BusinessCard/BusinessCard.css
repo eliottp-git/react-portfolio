@@ -1,0 +1,18 @@
+.business-card {
+    margin-left: 12em;
+    height: 40em;
+    width: 16em;
+    border-radius: 15px;
+    background: rgba(35, 37, 44, 1);   
+    display: grid;
+    grid-template-rows: 40% 20% 34% 6%;
+    overflow: hidden;
+    font-family: Inter;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}

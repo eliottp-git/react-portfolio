@@ -1,0 +1,17 @@
+.home_content {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+    transition: all 500ms ease;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home_content .text {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-variant-2-dark, black);
+    margin: 12px;
+}

@@ -1,0 +1,84 @@
+.card {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    width: 175px;
+    /* width: 175px; */
+    /* height: 100%; */
+    /* height: 300px; */
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+
+.card--soldout-badge {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background: white;
+    padding: 0.1em 0.4em 0.1em 0.4em ;
+    border-radius: 10%;
+    font-size: 0.9em;
+    z-index: 1;
+}
+
+.card--photo-container {
+    position: relative;
+}
+
+.card--photo {
+    border-radius: 1em;
+    width: 100%;
+    opacity: 1;
+    display: block;
+}
+
+.card--photo-description {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9em;
+    padding: 3em 1em 1em 1em;
+    border-radius: 1em;
+    overflow: hidden;
+    color: white;
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+.card--photo-description > * {
+    transform: translateY(20px);
+    transition: transform 250ms;
+}
+
+.card--photo-description:hover {
+    opacity: 1;
+}
+
+.card--photo-description:hover > * {
+    transform: translateY(0);
+}
+
+.card--summary {
+    display: flex;
+    align-items: center;
+}
+
+.card--summary .spaceafter {
+    padding-right: 0.2em;
+}
+
+.card--summary--star {
+    height: 14px;
+}
+
+
+.gray {
+    color: #918E9B;
+}
+
+.card--price > span {
+    font-weight: 600;
+}

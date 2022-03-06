@@ -1,0 +1,13 @@
+nav {
+    height: 10vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.nav--logo {
+    margin-left: 2em;
+    max-height: 35%; 
+    max-width: 100px;
+}
